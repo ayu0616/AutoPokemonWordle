@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "pokemon wordle cheat",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://wordle.mega-yadoran.jp/*"
+            ],
+            "js": [
+                "./js/background.js"
+            ]
+        }
+    ],
+    "background": {
+        "page": "./background.html"
+    },
+    "web_accessible_resources": [
+        "js/*",
+        "background.html"
+    ]
+}
